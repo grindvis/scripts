@@ -3,12 +3,12 @@
 set -e
 
 # Refresh the instlled repositories
-apt update
+apt update -q
 
 # Install updates (prompts will be answered with "yes")
-apt upgrade -y
+apt upgrade -q -y
 
 # Remove packages that were automatically installed to satisfy dependencies for other packages and are now no longer needed as dependencies changed (prompts will be answered with "yes").
-apt autoremove -y
+apt autoremove -q -y
 
 exit
