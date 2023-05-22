@@ -2,13 +2,13 @@
 # The set -e option instructs bash to immediately exit if any command has a non-zero exit status.
 set -e
 
-# Set the location where the logfiles will be saved. 
+# Set the location where the logfiles will be saved.
 logging="/var/log/apt/automaticupdates.log"
 
-# Set a prompt so the . 
-echo "******************************************************************************************"
-echo "Automatic update started at `date +%Y-%m-%d" "%H:%M:%S`" >> $logging
-echo "******************************************************************************************"
+# Set a prompt so the it can be retrieved when the updates are instlled. 
+echo -e "***************************************************************************************\n\
+Automatic update start `date +%Y-%m-%d" "%H:%M:%S`\n\
+***************************************************************************************" >> $logging
 
 # Refresh the instlled repositories
 apt-get update -q >> $logging
