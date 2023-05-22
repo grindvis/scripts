@@ -7,4 +7,4 @@ Various scripts I use for system management
 ### Usage
 Go to crontab (with `crontab -e`) and refer to te script.
 
-For example: `0 23 * * 7 bash /home/user/scripts/install_updates.sh`
+For example. Execute the script every sunday at 23:00: `0 23 * * 7 bash /home/user/scripts/install_updates.sh`
