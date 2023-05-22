@@ -2,6 +2,8 @@
 # The set -e option instructs bash to immediately exit if any command has a non-zero exit status.
 set -e
 
+echo "Automatic update start `date +%Y-%m-%d" "%H:%M:%S`"
+
 # Refresh the instlled repositories
 apt update -q >> /var/log/apt/automaticupdates.log
 
