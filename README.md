@@ -4,7 +4,7 @@ Various scripts I use for system management
 ## Install updates
 
 ### Simple update script
-[install_updates](https://github.com/grindvis/scripts/blob/main/install_updates.sh)
+[install_updates.sh](https://github.com/grindvis/scripts/blob/main/install_updates.sh)
 
 ### Simple update script usage
 Go to crontab (with `sudo crontab -e`) and refer to te script.
