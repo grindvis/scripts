@@ -5,7 +5,10 @@ set -e
 # Refresh the instlled repositories
 apt update
 
-# Install updates (proms will be answered with "yes") 
+# Install updates (prompts will be answered with "yes")
 apt upgrade -y
+
+# Remove packages that were automatically installed to satisfy dependencies for other packages and are now no longer needed as dependencies changed (prompts will be answered with "yes").
+apt autoremove -y
 
 exit
